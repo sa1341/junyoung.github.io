@@ -8,7 +8,15 @@
 
     <url>
         <loc>http://yoursite-url/2019/02/17/Stack-Queue/</loc>
-        <lastmod>2019-02-17T15:25:32.922Z</lastmod>
+        <lastmod>2019-02-18T14:35:25.559Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://yoursite-url/2019/02/18/search-algorism/</loc>
+        <lastmod>2019-02-18T14:34:55.097Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
