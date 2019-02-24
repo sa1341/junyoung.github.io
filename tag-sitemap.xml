@@ -30,6 +30,13 @@
     </url>
 
     <url>
+        <loc>http://yoursite-url/tags/TLI/</loc>
+        <lastmod>2019-02-19T13:54:57.717Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>http://yoursite-url/tags/Stack/</loc>
         <lastmod>2019-02-19T13:54:57.717Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -44,15 +51,15 @@
     </url>
 
     <url>
-        <loc>http://yoursite-url/tags/TLI/</loc>
+        <loc>http://yoursite-url/tags/%EB%B0%B0%EC%97%B4/</loc>
         <lastmod>2019-02-19T13:54:57.717Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://yoursite-url/tags/%EB%B0%B0%EC%97%B4/</loc>
-        <lastmod>2019-02-19T13:54:57.717Z</lastmod>
+        <loc>http://yoursite-url/tags/%EC%9E%AC%EA%B7%80/</loc>
+        <lastmod>2019-02-24T11:43:50.255Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

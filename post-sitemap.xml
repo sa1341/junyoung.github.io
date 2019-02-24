@@ -7,6 +7,14 @@
     </url>
 
     <url>
+        <loc>http://yoursite-url/2019/02/24/recursive/</loc>
+        <lastmod>2019-02-24T11:43:50.255Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://yoursite-url/2019/02/17/Stack-Queue/</loc>
         <lastmod>2019-02-19T13:54:57.717Z</lastmod>
         <changefreq>weekly</changefreq>
