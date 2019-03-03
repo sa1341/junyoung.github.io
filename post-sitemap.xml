@@ -7,8 +7,24 @@
     </url>
 
     <url>
+        <loc>http://yoursite-url/2019/03/03/%EB%B2%84%EB%B8%94%EC%A0%95%EB%A0%AC/</loc>
+        <lastmod>2019-03-03T06:37:29.561Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://yoursite-url/2019/02/24/recursive/</loc>
-        <lastmod>2019-02-24T11:43:50.255Z</lastmod>
+        <lastmod>2019-03-03T06:01:45.638Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://yoursite-url/2019/02/18/search-algorism/</loc>
+        <lastmod>2019-03-03T05:21:07.754Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -17,14 +33,6 @@
     <url>
         <loc>http://yoursite-url/2019/02/17/Stack-Queue/</loc>
         <lastmod>2019-02-19T13:54:57.717Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://yoursite-url/2019/02/18/search-algorism/</loc>
-        <lastmod>2019-02-18T14:34:55.097Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
