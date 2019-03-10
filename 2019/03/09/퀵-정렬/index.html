@@ -14,11 +14,11 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <title>
         
-          버블정렬 - JunBlog
+          퀵 정렬 - JunBlog
         
     </title>
 
-    <link rel="canonical" href="http://yoursite-url/2019/03/03/버블정렬/">
+    <link rel="canonical" href="http://yoursite-url/2019/03/09/퀵-정렬/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -92,16 +92,16 @@
                             
                               <a class="tag" href="/tags/#정렬" title="정렬">정렬</a>
                             
-                              <a class="tag" href="/tags/#버블" title="버블">버블</a>
-                            
                               <a class="tag" href="/tags/#오름차순" title="오름차순">오름차순</a>
                             
+                              <a class="tag" href="/tags/#퀵" title="퀵">퀵</a>
+                            
                         </div>
-                        <h1>버블정렬</h1>
+                        <h1>퀵 정렬</h1>
                         <h2 class="subheading"></h2>
                         <span class="meta">
                             Posted by Jun Young on
-                            2019-03-03
+                            2019-03-09
                         </span>
                     </div>
                 
@@ -218,63 +218,35 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-                <h1><span id="버블정렬이란">버블정렬이란?</span></h1>
-<p>오늘은 정렬 알고리즘에 대해서 공부하고 간단한 코드를 작성하였습니다. 정렬 알고리즘 중 하나인 버블정렬(Bubble Sort)에 대해서 살펴보았습니다.</p>
-<h2><span id="버블정렬-개념">버블정렬 개념</span></h2>
-<p>먼저 개념부터 설명하면 버블정렬은 서로 인접한 두 원소를 검사하여 오름차순으로 정렬하는 알고리즘입니다. 인접한 2개의 인덱스의 요소 값을 비교하여 크기가 순서대로 되어 있지 않으면 서로 환하는 방식입니다. 비교,교환의 일련의 과정을 패스라고 부릅니다.</p>
-<p>버블 정렬은 첫 번째 요소와 두번째 요소를, 두 번째와 세번째 요소를, 세번쨰와 네번째를, (n-1)번째 요소와 n번째 요소를 비교하여 교환하면서 요소 값을 정렬합니다.</p>
-<p>패스1을 수행하고 나면 가장 큰 요소가 맨 뒤로 이동하므로 패스2에서는 맨 끝에 있는 자료는 정렬에서 제외되고,패스3에서는 끝에서 두 번째 요소까지는 정렬에서 제외됩니다. 이렇게 정렬에서 제외되는 요소 값은 하나씩 늘어납니다.</p>
-<p>이제 개념을 설명하였으니, 버블정렬이 어떤식으로 이루어지는지 과정을 그림과 소스코드로 설명하겠습니다.</p>
-<img width="858" alt="2019-03-03 2 25 31" src="https://user-images.githubusercontent.com/22395934/53691406-9a1b3400-3dc0-11e9-8bf0-4680d5428266.png">
-<p>패스1</p>
-<ul>
-<li>첫 번째 요소 7을 두 번째 요소 4와 비교하여 교환하고, 두 번째의 7과 세 번째의 5를 비교하여 교환하고, 세 번째의 7과 네 번째의 1을 비교하여 교환하고, 네번째의 7과 다섯번째 3을 비교하여 교환합니다. 이 과정에서 자료를 네 번 비교합니다. 그리고 가장 큰 자료가 맨끝으로 이동하므로 다음 패스에서는 맨 끝에있는 자료는 비교할 필요가 없습니다.</li>
-</ul>
-<p>패스2</p>
-<ul>
-<li>첫 번째의 4를 두 번쨰 5와 비교하여 교환하지 않고,두 번째의 5와 세 번째의 5와 네 번째의 3을 비교하여 교환합니다. 이 과정에서 자료를 세 번 자료가 끝에서 두 번째에 놓입니다.</li>
-</ul>
-<p>패스3</p>
-<ul>
-<li>첫 번째의 4를 두 번째 1과 비교하여 교환하고, 두 번째의 4와 세번째의 3을 비교하여 교환한다. 이 과정에서 자료를 두 번 비교한다. 비교한 자료 중 가장 큰 자료가 끝에서 세 번째에 놓인다.</li>
-</ul>
-<p>패스4</p>
-<ul>
-<li>첫 번째의 1과 두번째의 3을 비교하여 교환하지 않는다.</li>
-</ul>
-<h2><span id="버블정렬-예제코드">버블정렬 예제코드</span></h2>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BubbleSortEx</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">swap</span><span class="params">(<span class="keyword">int</span>[] a, <span class="keyword">int</span> c, <span class="keyword">int</span> n)</span></span>&#123;</span><br><span class="line">        <span class="keyword">int</span> temp = a[c];</span><br><span class="line">        a[c] = a[n];</span><br><span class="line">        a[n] = temp;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">static</span> <span class="keyword">int</span>[] bubbleSort(<span class="keyword">int</span>[] input)&#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> n = input.length;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n-<span class="number">1</span>; i++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; n-<span class="number">1</span>-i; j++) &#123;</span><br><span class="line">                <span class="keyword">if</span>(input[j] &gt; input[j+<span class="number">1</span>])</span><br><span class="line">                    swap(input, j ,j+<span class="number">1</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> input;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">        Scanner sc = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">        System.out.print(<span class="string">"요솟수를 입력하세요: "</span>);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> n = sc.nextInt();</span><br><span class="line">        <span class="keyword">int</span>[] arr = <span class="keyword">new</span> <span class="keyword">int</span>[n];</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; arr.length; i++) &#123;</span><br><span class="line">            System.out.print(<span class="string">"arr["</span> + i +<span class="string">"]: "</span> );</span><br><span class="line">            arr[i] = sc.nextInt();</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span>[] result = bubbleSort(arr);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> c : result)&#123;</span><br><span class="line">            System.out.println(c);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+                <h2><span id="퀵-정렬">퀵 정렬</span></h2>
+<p>저번시간에 공부한 버블정렬 이외에도 가장 빠른 정렬 알고리즘 중의 하나로 널리 사용되고 있는 퀵정렬에 대해서 개념 및 코드 구현을 해보았습니다.<br>
+퀵 정렬이라는 이름은 이 알고리즘의 정렬 속도가 매우 빠른 데서 착안해 찰스 엔터니 리처드 호어가 붙인 이름입니다.</p>
+<h3><span id="퀵-정렬-이미지">퀵 정렬 이미지</span></h3>
+<p><img src="https://user-images.githubusercontent.com/22395934/54072206-d9fb8300-42ba-11e9-978b-88be0fd56591.png" alt="스크린샷 2019-03-09 오후 10 29 19"></p>
+<p>처음에 그림만보면 도대체 어떻게 정렬하는지 가늠되지가 않았습니다. 퀵 정렬에 대해서 공부하기전에 사전에 알아야하는 단어가 있는데 Pivot(피벗)이라고 하는 녀석을 알아야 합니다. 피벗은 어떤 리스트 안의 값들 중에 임의로 하나를 기준으로 잡아서 그 기준보다 작은 그룹과 큰 그룹으로 정렬을 수행 합니다.</p>
+<p>위의 그림에서는 피벗을 5로 잡았습니다. 5를 기준으로 왼쪽에는 5보다 작은 그룹이, 오른쪽에는 5보다 큰 그룹으로 정렬되어 있습니다. 이렇게 퀵 정렬은 하나의 리스트를 피벗을 기준으로 두 개의 비균등한 크기로 분할하고 분할된 부분 리스트를 정렬한 다음, 두 개의 정렬된 부분 리스트를 합하여 전체가 정렬된 리스트가 되게 하는 방법입니다.</p>
+<p>이러한 퀵 정렬을 Java 소스코드로 구현해보았습니다.</p>
+<h3><span id="퀵-정렬-소스코드">퀵 정렬 소스코드</span></h3>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">QucikSort</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// swap은 피벗보다 작은 값과 큰 값의 위치를 교환합니다.</span></span><br><span class="line">    <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">swap</span><span class="params">(<span class="keyword">int</span>[] a, <span class="keyword">int</span> idx1, <span class="keyword">int</span> idx2)</span></span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> t = a[idx1];</span><br><span class="line">        a[idx1] = a[idx2];</span><br><span class="line">        a[idx2] = t;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">quickSort</span><span class="params">(<span class="keyword">int</span>[] a, <span class="keyword">int</span> left, <span class="keyword">int</span> right)</span></span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> pl = left;  <span class="comment">// 배열의 첫번째 인덱스</span></span><br><span class="line">        <span class="keyword">int</span> pr = right; <span class="comment">// 배여르이 마지막 인덱스</span></span><br><span class="line">        <span class="keyword">int</span> x = a[(left+right) / <span class="number">2</span>]; <span class="comment">//피벗을 구합니다.</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">do</span>&#123;</span><br><span class="line">            <span class="keyword">while</span>(a[pl] &lt; x) pl++;</span><br><span class="line">            <span class="keyword">while</span>(a[pr] &gt; x) pr--;</span><br><span class="line">            <span class="keyword">if</span>(pl &lt;= pr)</span><br><span class="line">                swap(a, pl++, pr--);</span><br><span class="line"></span><br><span class="line">        &#125;<span class="keyword">while</span>(pl &lt;= pr);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//그룹의 요소가 2개이상일때 계속 재귀적으로 퀵 정렬 메소드를 호출한다.</span></span><br><span class="line">        <span class="keyword">if</span>(left &lt; pr) quickSort(a, left, pr);</span><br><span class="line">        <span class="keyword">if</span>(pl &lt;  right) quickSort(a, pl, right);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Scanner sc = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line"></span><br><span class="line">        System.out.println(<span class="string">"퀵 정렬"</span>);</span><br><span class="line">        System.out.print(<span class="string">"요솟수 : "</span>);</span><br><span class="line">        <span class="keyword">int</span> nx = sc.nextInt();</span><br><span class="line">        <span class="keyword">int</span>[] x = <span class="keyword">new</span> <span class="keyword">int</span>[nx];</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nx; i++) &#123;</span><br><span class="line">            System.out.print(<span class="string">"x["</span> + i + <span class="string">"] : "</span>);</span><br><span class="line">            x[i] = sc.nextInt();</span><br><span class="line">        &#125;</span><br><span class="line">        quickSort(x, <span class="number">0</span>, nx-<span class="number">1</span>);</span><br><span class="line"></span><br><span class="line">        System.out.println(<span class="string">"오름차순으로 정렬했습니다."</span>);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;nx; i++)</span><br><span class="line">            System.out.println(<span class="string">"x["</span> + i + <span class="string">"]= "</span> + x[i]);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="https://user-images.githubusercontent.com/22395934/54072740-5fcefc80-42c2-11e9-88e3-3d363b3e3999.png" alt="스크린샷 2019-03-09 오후 11 23 19"></p>
+<p>위의 코드와 실행과정을 보면 먼저 배열을 두 그룹으로 나누는 순서에 대해서 살펴보겠습니다. 위의 배열에서 값을 입력 받아서 퀵 정렬로 오름차순을 수행하는 과정입니다. 피벗을 x에, 왼쪽 끝 요소의 인덱스 값을 pl, 오른쪽 끝 요소의 인덱스를 pr에 넣었습니다. 그룹을 나누기 위해 피벗 이하의 요소를 배열 왼쪽으로, 이상의 요소를 배열 오른쪽으로 옮겨야 합니다.</p>
+<p>먼저 퀵 정렬을 수행하기 위해서 quickSort 메서드의 인자로 배열 x, 배열의 첫번째 인덱스인 0, 배열의 맨 오른쪽 끝 인덱스를 넣어서 호출을 합니다. 그리고 while문으로 배열 왼쪽에 있는 pl 값이 피벗보다 큰 값을 찾을 때까지 오른쪽으로 계속 스캔을합니다.<br>
+a[pl] &gt;= x이면 pl 값은 증가하지 않습니다. 마찬가지로 배열 오른쪽에 있는 pr도 피벗보다 작은 값을 만나기전까지 while문으로 계속 왼쪽으로 스캔하게 되고, a[pr] &lt;= x이면 pr값도 감소하지 않습니다.<br>
+pl &lt;= pr이 성립되면 pl과 pr이 가리키는 요소(피벗보다 작은 값과 큰 값)위치를 교환하는 swap 메서드를 수행하게 됩니다.<br>
+이렇게 계속 수행을 하면 a[0] ~ a[4]와 a[5] ~ a[8]으로 나누어집니다. 그러면 이 두 그룹을 다시 같은 방법으로 나눕니다. 요소의 개수가 1개<br>
+인 그룹은 더 이상 그룹을 나눌 필요가 없으므로 요소의 개수가 2개인 이상인 그룹만 나누면 됩니다.</p>
 <blockquote>
 <blockquote>
-<p>출력결과<br>
-<img width="566" alt="2019-03-03 2 45 39" src="https://user-images.githubusercontent.com/22395934/53691548-a81e8400-3dc3-11e9-98cb-4d5667fcfcd6.png"></p>
+<p>pr이 a[0]보다 오른쪽에 있으면(left &lt; pr)왼쪽 그룹을 나눕니다.</p>
 </blockquote>
 </blockquote>
-<h1><span id="버블정렬-알고리즘의-특징">버블정렬 알고리즘의 특징</span></h1>
-<ul>
-<li>장점<br>
-구현이 매우 간단하다.</li>
-<li>단점<br>
-순서에 맞지 않는 요소를 인접한 요소와 교환합니다.<br>
-하나의 요소가 가장 왼쪽에서 가장 오른쪽으로 이동하기 위해서는 배열에서 모든 다른 요소들과 교환되어야 합니다.<br>
-특히 특정 요소가 최종 정렬 위치에 있는 경우라도 교환되는 일이 알어납니다.<br>
-일반적으로 자료의 교환 작업이 자료의 이동작업보다 더 복잡하기 때문에 버블정렬은 단순성에도 불구하고 거의 쓰이지 않습니다.</li>
-</ul>
-<h1><span id="버블정렬의-시간복잡도">버블정렬의 시간복잡도.</span></h1>
-<ul>
-<li>
-<p>비교횟수<br>
-최상, 평균, 최악 모두 일정합니다.<br>
-n-1, n-2, …, 2, 1번 = n(n-1)/2</p>
-</li>
-<li>
-<p>교환 횟수<br>
-입력한 자료가 역순으로 정렬되어 있는 최악의 경우, 한 번 교환하기 위하여 3번의 이동(swap 함수의 작업)이 필요하므로 (비교 횟수 * 3)번 = 3n(n-1)/2<br>
-입력 자료가 이미 정렬되어 있는 최상의 경우, 자료의 이동이 발생하지 않습니다.</p>
-</li>
-</ul>
-<h1><span id="참고">참고</span></h1>
-<p>(<a href="https://gmlwjd9405.github.io/2018/05/06/algorithm-bubble-sort.html" target="_blank" rel="noopener">https://gmlwjd9405.github.io/2018/05/06/algorithm-bubble-sort.html</a>)</p>
+<blockquote>
+<blockquote>
+<p>pl이 a[8]보다 왼쪽에 있으면(pl &lt; right)오른쪽 그룹을 나눕니다.</p>
+</blockquote>
+</blockquote>
+<p>left &lt; pr, pl &lt; right는 모두 그룹의 개수가 1개인 경우에는 성립하지 않는 조건입니다. 다시 말해 요소의 개수가 2개 이상인 그룹만이 나누기 위해 필요한 조건입니다.<br>
+퀵 정렬은 분할 정복 알고리즘이므로 재귀 호출을 사용하여 구현할 수 있습니다.</p>
 
                 
 
@@ -282,13 +254,9 @@ n-1, n-2, …, 2, 1번 = n(n-1)/2</p>
                 <!-- Pager -->
                 <ul class="pager">
                     
-                        <li class="previous">
-                            <a href="/2019/03/09/퀵-정렬/" data-toggle="tooltip" data-placement="top" title="퀵 정렬">&larr; Previous Post</a>
-                        </li>
-                    
                     
                         <li class="next">
-                            <a href="/2019/02/24/recursive/" data-toggle="tooltip" data-placement="top" title="재귀 알고리즘">Next Post &rarr;</a>
+                            <a href="/2019/03/03/버블정렬/" data-toggle="tooltip" data-placement="top" title="버블정렬">Next Post &rarr;</a>
                         </li>
                     
                 </ul>
@@ -318,7 +286,7 @@ n-1, n-2, …, 2, 1번 = n(n-1)/2</p>
         <div id="toc" class="toc-article">
         <strong class="toc-title">Contents</strong>
         
-          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">버블정렬이란?</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">1.1.</span> <span class="toc-nav-text">버블정렬 개념</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">1.2.</span> <span class="toc-nav-text">버블정렬 예제코드</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">버블정렬 알고리즘의 특징</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">버블정렬의 시간복잡도.</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">4.</span> <span class="toc-nav-text">참고</span></a></li></ol>
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">퀵 정렬</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">1.1.</span> <span class="toc-nav-text">퀵 정렬 이미지</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">1.2.</span> <span class="toc-nav-text">퀵 정렬 소스코드</span></a></li></ol></li></ol>
         
         </div>
       </aside>
@@ -340,9 +308,9 @@ n-1, n-2, …, 2, 1번 = n(n-1)/2</p>
                        
                           <a class="tag" href="/tags/#정렬" title="정렬">정렬</a>
                         
-                          <a class="tag" href="/tags/#버블" title="버블">버블</a>
-                        
                           <a class="tag" href="/tags/#오름차순" title="오름차순">오름차순</a>
+                        
+                          <a class="tag" href="/tags/#퀵" title="퀵">퀵</a>
                         
                     </div>
                 </section>
@@ -375,8 +343,8 @@ n-1, n-2, …, 2, 1번 = n(n-1)/2</p>
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
     var disqus_shortname = "JunYoungsBlog";
-    var disqus_identifier = "http://yoursite-url/2019/03/03/버블정렬/";
-    var disqus_url = "http://yoursite-url/2019/03/03/버블정렬/";
+    var disqus_identifier = "http://yoursite-url/2019/03/09/퀵-정렬/";
+    var disqus_url = "http://yoursite-url/2019/03/09/퀵-정렬/";
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
