@@ -79,27 +79,6 @@
     </url>
 
     <url>
-        <loc>http://yoursite-url/tags/%EC%96%B4%EB%85%B8%ED%85%8C%EC%9D%B4%EC%85%98/</loc>
-        <lastmod>2019-03-18T14:16:30.557Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://yoursite-url/tags/%EC%9E%90%EB%B0%94/</loc>
-        <lastmod>2019-03-18T14:16:30.557Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://yoursite-url/tags/%EC%9D%B4%EA%B2%83%EC%9D%B4-%EC%9E%90%EB%B0%94%EB%8B%A4/</loc>
-        <lastmod>2019-03-18T14:16:30.557Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://yoursite-url/tags/TLI/</loc>
         <lastmod>2019-03-24T12:57:31.003Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -109,6 +88,55 @@
     <url>
         <loc>http://yoursite-url/tags/TMI/</loc>
         <lastmod>2019-03-24T12:57:31.003Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite-url/tags/%EC%96%B4%EB%85%B8%ED%85%8C%EC%9D%B4%EC%85%98/</loc>
+        <lastmod>2019-04-14T06:10:01.477Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite-url/tags/%EC%9E%90%EB%B0%94/</loc>
+        <lastmod>2019-04-14T06:10:01.477Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite-url/tags/%EC%9D%B4%EA%B2%83%EC%9D%B4-%EC%9E%90%EB%B0%94%EB%8B%A4/</loc>
+        <lastmod>2019-04-14T06:10:01.477Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite-url/tags/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/</loc>
+        <lastmod>2019-04-28T15:46:01.751Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite-url/tags/hackerrank/</loc>
+        <lastmod>2019-04-28T15:46:01.751Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite-url/tags/TreeSet/</loc>
+        <lastmod>2019-04-28T15:46:01.751Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite-url/tags/%EC%9D%B4%EC%A7%84%ED%8A%B8%EB%A6%AC/</loc>
+        <lastmod>2019-04-28T15:46:01.751Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
