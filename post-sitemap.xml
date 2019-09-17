@@ -7,6 +7,22 @@
     </url>
 
     <url>
+        <loc>http://yoursite-url/2019/09/17/JPA%EA%B0%80-%EC%A7%80%EC%9B%90%ED%95%98%EB%8A%94-%EC%97%94%ED%8B%B0%ED%8B%B0-%EB%A7%A4%ED%95%91/</loc>
+        <lastmod>2019-09-17T15:27:16.174Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://yoursite-url/2019/05/25/%EC%8A%A4%ED%94%84%EB%A7%81-AOP-%EA%B0%9C%EB%85%90-%EB%B0%8F-Proxy%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EA%B5%AC%EB%8F%99%EC%9B%90%EB%A6%AC/</loc>
+        <lastmod>2019-08-01T11:04:31.000Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://yoursite-url/2019/06/17/JPA%EA%B0%80-%EC%A0%9C%EA%B3%B5%ED%95%98%EB%8A%94-%EC%98%81%EC%86%8D%EC%84%B1-%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8%EC%9D%98-%ED%8A%B9%EC%A7%95%EA%B3%BC-%EC%9E%A5%EC%A0%90/</loc>
         <lastmod>2019-06-29T07:45:27.249Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -33,14 +49,6 @@
     <url>
         <loc>http://yoursite-url/2019/06/01/%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8%EC%97%90%EC%84%9C-Querydsl%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%8F%99%EC%A0%81-SQL%EC%9D%98-%EC%B2%98%EB%A6%AC/</loc>
         <lastmod>2019-06-01T15:44:56.758Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://yoursite-url/2019/05/25/%EC%8A%A4%ED%94%84%EB%A7%81-AOP-%EA%B0%9C%EB%85%90-%EB%B0%8F-Proxy%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EA%B5%AC%EB%8F%99%EC%9B%90%EB%A6%AC/</loc>
-        <lastmod>2019-06-01T15:11:28.994Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
