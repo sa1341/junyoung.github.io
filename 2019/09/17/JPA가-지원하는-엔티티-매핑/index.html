@@ -148,14 +148,14 @@
 
                         
                         <li>
-                            <a href="/about/">About</a>
+                            <a href="/archive/">Archives</a>
                         </li>
                         
                     
 
                         
                         <li>
-                            <a href="/archive/">Archives</a>
+                            <a href="/about/">About</a>
                         </li>
                         
                     
@@ -250,12 +250,12 @@
 <p>@Entity 적용 시 주의사항</p>
 <ul>
 <li>기본 생성자는 필수다(파라미터가 없는 public 또는 protected 생성자).</li>
-<li>final 클래스, enum, interface, innter 클래스에는 사용 할 수 없다.</li>
+<li>final 클래스, enum, interface, inner 클래스에는 사용 할 수 없다.</li>
 <li>저장할 필드에 final을 사용하면 안 된다.</li>
 </ul>
 <p>JPA가 엔터티 객체를 생성할 때 기본 생성자를 사용하므로 이 생성자는 반드시 있어야 합니다. 자바는 생성자가 하나도 없으면 다음과 같이 기본 생성자를 자동으로 만듭니다.<br>
 ex)<br>
-publiic Member() {} //기본 생성자</p>
+public Member() {} //기본 생성자</p>
 <p>만약 생성자를 하나 이상 만들면 자바는 기본 생성자를 자동으로 만들지 않기 때문에 이때는 개발자가 직접 기본 생성자를 만들어야 합니다.</p>
 <p>public Member() {} //직접 만든 기본 생성자</p>
 <p>//임의의 생성자<br>
@@ -446,6 +446,10 @@ private RoleType roleType;</p>
                 <hr>
                 <!-- Pager -->
                 <ul class="pager">
+                    
+                        <li class="previous">
+                            <a href="/2019/09/19/빌더-패턴-Builder-Pattern/" data-toggle="tooltip" data-placement="top" title="빌더 패턴(Builder Pattern)">&larr; Previous Post</a>
+                        </li>
                     
                     
                         <li class="next">
