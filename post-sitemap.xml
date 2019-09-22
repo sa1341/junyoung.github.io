@@ -7,6 +7,14 @@
     </url>
 
     <url>
+        <loc>http://yoursite-url/2019/09/21/JPA-%EC%97%B0%EA%B4%80%EA%B4%80%EA%B3%84-%EB%A7%A4%ED%95%91-%EA%B8%B0%EC%B4%88/</loc>
+        <lastmod>2019-09-22T11:18:01.632Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://yoursite-url/2019/09/19/%EB%B9%8C%EB%8D%94-%ED%8C%A8%ED%84%B4-Builder-Pattern/</loc>
         <lastmod>2019-09-19T14:42:21.667Z</lastmod>
         <changefreq>weekly</changefreq>
