@@ -149,14 +149,14 @@
 
                         
                         <li>
-                            <a href="/archive/">Archives</a>
+                            <a href="/tags/">Tags</a>
                         </li>
                         
                     
 
                         
                         <li>
-                            <a href="/tags/">Tags</a>
+                            <a href="/archive/">Archives</a>
                         </li>
                         
                     
@@ -296,7 +296,7 @@ JPA는 이런 문제를 예방하기 위해서 트랜잭션을 커밋할 때 플
 <h3><span id="jpql-쿼리-실행-시-플러시-자동-호출">JPQL 쿼리 실행 시 플러시 자동 호출</span></h3>
 <p>JPQL이나 Criteria같은 객체지향 쿼리를 호출할 때도 플러시가 실행된다.<br>
 예시를 통해서 한번 알아보겠습니다.</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//save 메소드는 JPA 구현체인 하이버네이트에서 제공해주는 함수로 persist처럼 햐당 엔터티를 영속화 시킵니다.</span></span><br><span class="line">em.save(memberA);</span><br><span class="line">em.save(memberB);</span><br><span class="line">em.save(memberC);</span><br><span class="line"></span><br><span class="line"><span class="comment">//중간에 JQPL 실행</span></span><br><span class="line">query = em. createQuery(<span class="string">"select m from Member m"</span>, Member.class);</span><br><span class="line">List&lt;Member&gt; members = query.getResultList();</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//save 메소드는 JPA 구현체인 하이버네이트에서 제공해주는 함수로 persist처럼 해당 엔터티를 영속화 시킵니다.</span></span><br><span class="line">em.save(memberA);</span><br><span class="line">em.save(memberB);</span><br><span class="line">em.save(memberC);</span><br><span class="line"></span><br><span class="line"><span class="comment">//중간에 JQPL 실행</span></span><br><span class="line">query = em. createQuery(<span class="string">"select m from Member m"</span>, Member.class);</span><br><span class="line">List&lt;Member&gt; members = query.getResultList();</span><br></pre></td></tr></table></figure>
 <p>먼저 em.save()나 em.persist()를 호출해서 엔터티 memberA, memberB, memberC를 영속 상태로 만들었습니다. 이 엔터티들은 영속성 컨텍스트에는 있지만 아직 데이터베이스에는 반영되지 않았습니다. 이때 JPQL를 실행하면 JQPL은 SQL로 변환되어 데이터베이스에서 엔터티를 조회합니다. 그런데 memberA, memberB, memberC는 아직 데이터베이스에 없으므로 쿼리 결과로 조회되지 않습니다. 따라서 쿼리를 실행하기 직전에 영속성 컨텍스트를 플러시해서 변경 내용을 데이터베이스에 반영해야 합니다.<br>
 마찬가지로 JPA는 이런 문제를 예방하기 위해 JPQL을 실행할 때도 플러시를 자동 호출합니다.</p>
 <p>지금까지 영속 컨텍스트가 제공하는 기능과 엔터티를 조회, 등록, 수정, 삭제 작업을 수행할 때 어떠한 과정을 거치는지… 그 과정속에서 플러시를 호출하는 메커니즘까지 살펴보았습니다.</p>
