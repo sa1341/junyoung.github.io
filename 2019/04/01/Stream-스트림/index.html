@@ -220,7 +220,7 @@
 
                 <h2><span id="스트림stream">스트림(Stream)</span></h2>
 <p>스트림은 자바 8부터 추가된 컬렉션(배열포함)의 저장 요소를 하나씩 참조해서 람다식(험수적 -스타일)으로 처리할 수 있도록 해주는 반복자이다. 스트림에 대해서 저는 전혀 몰랐었고(자랑이다…), 프로젝트를 진행하면서 구글링할때 다른 개발자분이 스트림으로 작성한 코드와 스프링 부트 책의 예제에서 잠깐 보고 말았던 것인데 따로 공부를 하면서 정말 편하게 컬렉션의 요소들을 처리 할 수 있다는게 너무 좋아서 공부를 해봤습니다.</p>
-<p>자바7 이전까지는 List<string> 컬렉션에서 요소를 순차적으로 처리하가ㅣ 위해 Iterator 반복자를 사용하여 처리하곤 했습니다.<br>
+<p>자바7 이전까지는 List<string> 컬렉션에서 요소를 순차적으로 처리하기 위해 Iterator 반복자를 사용하여 처리하곤 했습니다.<br>
 ex)</string></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">List&lt;String&gt; list = Arrays.asList(<span class="string">"홍길동"</span>, <span class="string">"임준영"</span>, <span class="string">"자바킴"</span>);</span><br><span class="line">Iterator&lt;String&gt; iterator = list.iterator();<span class="comment">//반복처리를 위해 Iterator 객체를 얻어옴</span></span><br><span class="line"><span class="keyword">while</span>(iterator.hasNext())&#123; <span class="comment">// 해당 컬렉션에 요소가 있는지 확인 있으면 true 리턴</span></span><br><span class="line">    String name = iterator.next(); <span class="comment">//요소를 name 변수에 저장</span></span><br><span class="line">    System.out.println(name); </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>위의 코드처럼 iterator.hasNext()로 컬렉션 타입에 요소가 있는지 확인하고 꺼내서 처리를 하지만 스트림을 이용하면 다음처럼 구현할 수가 있습니다.</p>
